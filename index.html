@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+</head>
+<body>
+<p class="logotitle">企业管理平台</p>
+<div class="loginbigbox" id="d1">
+    <div class="loginbox">
+        <div><input type="text" placeholder="请输入用户名" v-model="ename"/></div>
+        <div ><input type="password" placeholder="请输入密码" v-model="pwd"/></div>
+        <div><button @click="dl();">登陆</button></div>
+    </div>
+</div>
+<script>
+    var app1=new Vue ({
+        el:'#d1',
+        data :{
+            name:"",
+            pwd:""
+        },
+        methods:{
+            dl:function(){
+                var f=axios.get("aaa.jspx?ename="+this.ename+"&pwd="+this.pwd).then(function(res){
+                    var j1 =res.data;
+                    if(j1.msg=="error"){
+                        alert("登陆失败")
+                    }else{
+                        window.localStorage.setItem("id",j1.id);
+                        alert("登陆成功")
+                        window.location.href="index.html";
+                    }
+                });
+            }
+        }
+    });
+
+</script>
+
+</body>
+</html>
