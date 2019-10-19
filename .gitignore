@@ -14,9 +14,6 @@
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
 
-# 环境
-node_modules
-
 ### Example user template template
 ### Example user template
 
@@ -25,6 +22,8 @@ node_modules
 *.iml
 out
 gen
+# 环境
+node_modules
 ### Node template
 # Logs
 logs
