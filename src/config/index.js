@@ -13,7 +13,7 @@ export default {
   /**
    * @description 此处修改网站名称
    */
-  webName: 'EL-ADMIN',
+  webName: '企业人员管理系统',
   /**
    * @description 是否只保持一个子菜单的展开
    */
@@ -61,5 +61,5 @@ export default {
   /**
    * 备案号
    */
-  caseNumber: '浙ICP备18005431号'
+  caseNumber: '一串神秘的备案号'
 }
