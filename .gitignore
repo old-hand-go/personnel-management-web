@@ -15,7 +15,7 @@
 .nfs*
 
 # 环境
-/node_modules/*
+node_modules
 
 ### Example user template template
 ### Example user template
