@@ -3,9 +3,6 @@
     <el-tab-pane label="本地存储" name="first">
       <Local ref="local"/>
     </el-tab-pane>
-    <el-tab-pane label="七牛云存储" name="second">
-      <QiNiu ref="qiNiu"/>
-    </el-tab-pane>
   </el-tabs>
 </template>
 
