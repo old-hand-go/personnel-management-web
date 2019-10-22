@@ -49,7 +49,7 @@ export default {
       codeUrl: '',
       cookiePass: '',
       loginForm: {
-        username: '1018729292@qq.com',
+        username: 'admin',
         password: '123456',
         rememberMe: false,
         code: '',
